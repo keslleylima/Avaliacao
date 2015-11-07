@@ -12,7 +12,10 @@
 
     <modules>
 		             <module>Algoritmo1</module>
-		
+		             <module>Algoritmo1</module>
+		             <module>Algoritmo1</module>
+		             <module>Algoritmo1</module>
+		             <module>Algoritmo1</module>
 		</modules>
 
     <build>
