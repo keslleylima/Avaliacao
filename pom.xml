@@ -12,10 +12,26 @@
 
     <modules>
 		             <module>Algoritmo1</module>
-		             <module>Algoritmo1</module>
-		             <module>Algoritmo1</module>
-		             <module>Algoritmo1</module>
-		             <module>Algoritmo1</module>
+		             <module>Algoritmo2</module>
+		             <module>Algoritmo3</module>
+		             <module>Algoritmo4</module>
+		             <module>Algoritmo5</module>
+		             <module>Algoritmo6</module>
+		             <module>Algoritmo7</module>
+		             <module>Algoritmo8</module>
+		             <module>Algoritmo9</module>
+		             <module>Algoritmo10</module>
+		             <module>Algoritmo11</module>
+		             <module>Algoritmo12</module>
+		             <module>Algoritmo13</module>
+		             <module>Algoritmo14</module>
+		             <module>Algoritmo15</module>
+		             <module>Algoritmo16</module>
+		             <module>Algoritmo17</module>
+		             <module>Algoritmo18</module>
+		             <module>Algoritmo19</module>
+		             <module>Algoritmo20</module>
+		             <module>Algoritmo21</module>
 		</modules>
 
     <build>
