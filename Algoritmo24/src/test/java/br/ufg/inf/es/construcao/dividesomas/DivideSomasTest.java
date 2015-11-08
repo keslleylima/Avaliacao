@@ -4,6 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class DivideSomasTest {
+    
     @Test(expected = IllegalArgumentException.class)
     public void PrimeiroParametroInvalido(){
         DivideSomas.divideSoma(-2,1);
