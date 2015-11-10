@@ -4,6 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FibonacciTest {
+    
     @Test(expected = IllegalArgumentException.class)
     public void ParametroInvalido() {
         Fibonacci.fibonacci(-2);
