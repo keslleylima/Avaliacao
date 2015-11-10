@@ -24,5 +24,4 @@ public class FibonacciTest {
     public void testFibonacci11() throws Exception {
         assertEquals(89,Fibonacci.fibonacci(11));
     }
-
 }
