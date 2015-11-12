@@ -1,33 +1,32 @@
 package br.ufg.inf.es.construcao.crivo;
 
 /**
- * algoritmo que implementa O Crivo de Eratóstenes(um método simples e prático;
- * para encontrar números primos até um certo valor;
+ * algoritmo que implementa O Crivo de EratÃ³stenes(um mÃ©todo simples e prÃ¡tico;
+ * para encontrar nÃºmeros primos atÃ© um certo valor;
  */
 public class CrivoEratostenes {
     /**
      *
      * @param a tamanho do vetor;
-     * @param n última  posição do vetor a verificar;
-     *       IllegalArgumentException caso:
-     *          n seja menor que 2;
-     *          o tamanho do vetor a seja menor que n+1;
-     *          ou o vetor não posicao i que vai de 2 até n seja diferente de 0;
+     * @param n Ãºltima  posiÃ§Ã£o do vetor a verificar;
+     * @throws IllegalArgumentException caso:
+     *seja menor que 2;
+     *o tamanho do vetor a seja menor que n+1;
+     *ou o vetor nÃ£o posicao i que vai de 2 atÃ© n seja diferente de 0;
      *
      */
-    public static void crivoEratostenes(int[] a, int n)
-    {
+    public static void crivoEratostenes(int[] a, int n){
         if (n < 2) {
-            throw new IllegalArgumentException("n Inválido");
+            throw new IllegalArgumentException("n InvÃ¡lido");
         }
 
         if (a.length < (n + 1)) {
-            throw new IllegalArgumentException("Tamanho do vetor inválido");
+            throw new IllegalArgumentException("Tamanho do vetor invÃ¡lido");
         }
 
         for (int i = 2; i <= n; i++) {
             if (a[i] != 0) {
-                throw new IllegalArgumentException("Valor inválido");
+                throw new IllegalArgumentException("Valor invÃ¡lido");
             }
         }
 
