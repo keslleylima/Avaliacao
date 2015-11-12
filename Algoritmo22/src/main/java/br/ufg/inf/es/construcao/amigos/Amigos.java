@@ -1,29 +1,29 @@
 package br.ufg.inf.es.construcao.amigos;
 
 /**
- *implementaÁ„o do algoritmo que verifica se a soma dos divisores de n e igual
+ *implementa√ß√£o do algoritmo que verifica se a soma dos divisores de n e igual
  * a m e se a soma dos divisores de m e igual a n, caso ambos sejam iguais
- * n e m s„o chamados de amigos;
+ * n e m s√£o chamados de amigos;
  */
 public class Amigos {
     /**
      *
-     * @param n n˙mero qualquer positivo
-     * @param m n˙mero qualquer positivo
-     * @return valor booleano(true=n e m amigos, false n e m = n„o s„o);
-     * IllegalArgumentException caso os valores de entrada n„o atenda
-     * a condiÁ„o,ou seja,caso eles sejam igual ou menor que 0;
+     * @param n n√∫mero qualquer positivo
+     * @param m n√∫mero qualquer positivo
+     * @return valor booleano(true=n e m amigos, false n e m = n√£o s√£o);
+     * @throws IllegalArgumentException caso os valores de entrada n√£o atenda
+     * a condi√ß√£o,ou seja,caso eles sejam igual ou menor que 0;
      * sn = SomaDivisores.somaDivisores(n); sn chama a classe somaDivisores
      * que efetua a soma dos divisores de n,o mesmo acontece com m;
      *
      */
     public static boolean amigos(int n,int m){
     if (n <= 0){
-            throw new IllegalArgumentException("n inv·lido");
+            throw new IllegalArgumentException("n inv√°lido");
         }
 
     if (m <= 0){
-        throw new IllegalArgumentException("m inv·lido");
+        throw new IllegalArgumentException("m inv√°lido");
     }
 
     int sn = SomaDivisores.somaDivisores(n);
@@ -31,7 +31,7 @@ public class Amigos {
 
      if (sn == m && sm == n){
          return true;
-     }else {
+     } else {
          return false;
      }
     }
