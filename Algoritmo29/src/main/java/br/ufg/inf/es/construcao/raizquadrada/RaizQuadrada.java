@@ -1,21 +1,21 @@
 package br.ufg.inf.es.construcao.raizquadrada;
 
 /**
- * ImplementaÁ„o do algoritmo que efetua c·lculo da raiz quadrada de n
- * com apenas operaÁıes de soma,subtraÁ„o e divis„o;
+ * Implementa√ß√£o do algoritmo que efetua c√°lculo da raiz quadrada de n
+ * com apenas opera√ß√µes de soma,subtra√ß√£o e divis√£o;
  */
 public class RaizQuadrada {
     /**
      *
      * @param n Primeiro valor de entrada(raiz);
-     * @param i Segundo valor de entrada (grau de precis„o do valor da raiz);
+     * @param i Segundo valor de entrada (grau de precis√£o do valor da raiz);
      * @return r valor da raiz de indice i;
-     * IllegalArgumentException caso n n„o atenda as condiÁıes;
+     * @throws IllegalArgumentException caso n n√£o atenda as condi√ß√µes;
      *
      */
     public static double raizQuadrada(double n,int i){
         if (n <= 0){
-            throw new IllegalArgumentException("n inv·lido");
+            throw new IllegalArgumentException("n inv√°lido");
         }
 
         double r = 1;
