@@ -1,22 +1,22 @@
 package br.ufg.inf.es.construcao.fibonacci;
 
 /**
- * Algoritmo que implementa o cálculo da sequência de fibonacci;
+ * Algoritmo que implementa o cÃ¡lculo da sequÃªncia de fibonacci;
  */
 public class Fibonacci {
     /**
      *
-     * @param n números de termos;
-     * @return c valor do n termo da da sequência de fibonacci ;
+     * @param n nÃºmeros de termos;
+     * @return c valor do n termo da da sequÃªncia de fibonacci ;
      *  termo anterior : a;
      *  termo corrente : c;
-     *  IllegalArgumentException caso n seja menor que 0;
-     *  if (n == 0 || n == 1) return n ,pois cada termo subsequente será a
+     *  @throws IllegalArgumentException caso n seja menor que 0;
+     *  if (n == 0 || n == 1) return n ,pois cada termo subsequente serÃ¡ a
      *  soma dos dois antecessores.
      */
     public static int fibonacci(int n){
         if (n < 0){
-            throw new IllegalArgumentException("n inválido");
+            throw new IllegalArgumentException("n invÃ¡lido");
         }
 
         int a = 0;
