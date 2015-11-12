@@ -1,22 +1,22 @@
 package br.ufg.inf.es.construcao.quadrado;
 
 /**
- * algoritmo que implementa o calculo do quadrado perfeito de um n˙mero;
+ * algoritmo que implementa o calculo do quadrado perfeito de um n√∫mero;
  */
 public class QuadradoPerfeito {
     /**
      *
-     * @param k valor  entrada que deseja descobrir se È um quadrado perfeito;
-     * @return valor booleana ( true = k È quadrado perfeito,false = k n„o È
+     * @param k valor  entrada que deseja descobrir se √© um quadrado perfeito;
+     * @return valor booleana ( true = k √© quadrado perfeito,false = k n√£o √©
      * um quadrado perfeito);
-     * IllegalArgumentException caso k n„o atenda a condiÁ„o(k >= 1);
-     *  q È a soma de todos primos antecessores a k;
-     *   if (q == k) se q == k  o n˙mero È um quadrado perfeito;
+     * @throws IllegalArgumentException caso k n√£o atenda a condi√ß√£o(k >= 1);
+     *  q √© a soma de todos primos antecessores a k;
+     *   if (q == k) se q == k  o n√∫mero √© um quadrado perfeito;
      *
      */
     public static boolean quadradoPerfeito(int k){
         if (k < 1){
-            throw new IllegalArgumentException("K inv·lido");
+            throw new IllegalArgumentException("K inv√°lido");
         }
 
         int i = 1;
