@@ -6,10 +6,10 @@ package br.ufg.inf.es.construcao.propriedade3025;
 public class Propriedade3025 {
     /**
      *
-     * @param n número positivo entre entre 0 e 9999;
-     * @return valor booleano caso true o número possui a propriedade;
-     * se retorna false o número não possui;
-     * IllegalArgumentException caso valor de entrada não atenda as condições;
+     * @param n nÃºmero positivo entre entre 0 e 9999;
+     * @return valor booleano caso true o nÃºmero possui a propriedade;
+     * se retorna false o nÃºmero nÃ£o possui;
+     * @throws IllegalArgumentException caso valor de entrada nÃ£o atenda as condiÃ§Ãµes;
      *
      */
     public static boolean propriedade3025(int n) {
