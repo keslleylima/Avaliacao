@@ -6,14 +6,14 @@ package br.ufg.inf.es.construcao.propriedade153;
 public class Propriedade153 {
     /**
      *
-     * @param n número positivo entre 0 e 999;
+     * @param n nÃºmero positivo entre 0 e 999;
      * @return valor booleano (true o numero possui a propriedade, false
-     * o número não possui);
-     * IllegalArgumentException caso n não atenda as condições;
+     * o nÃºmero nÃ£o possui);
+     * @throws IllegalArgumentException caso n nÃ£o atenda as condiÃ§Ãµes;
      */
     public static boolean propriedade153(int n) {
         if (n < 0 || n > 999) {
-            throw new IllegalArgumentException("n inválido");
+            throw new IllegalArgumentException("n invÃ¡lido");
         }
 
         int i = n / 100;
@@ -22,7 +22,7 @@ public class Propriedade153 {
 
         if (((i * i * i) + (j * j * j) + (k * k * k)) == n) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
