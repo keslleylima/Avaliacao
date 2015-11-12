@@ -36,7 +36,7 @@ public class RazaoAurea {
         i = i + 1;
     }
 
-        return tc/ta;
+        return tc / ta;
     }
 }
 
