@@ -1,7 +1,7 @@
 package br.ufg.inf.es.construcao.dividesubtracoes;
 
 /**
- * implementação do algoritmo que utliza subtração para dividir dois números;
+ * implementaÃ§Ã£o do algoritmo que utliza subtraÃ§Ã£o para dividir dois nÃºmeros;
  */
 public class DivideSubtracoes {
     /**
@@ -9,15 +9,16 @@ public class DivideSubtracoes {
      * @param x primeiro valor de entrada,sendo maior ou igaula a 0;
      * @param y segundo valor de entrada,sendo maior do que zero;
      * @return d valor da divisao de x por y;
-     * IllegalArgumentException caso x ou y não atenda as condições;
+     * @throws IllegalArgumentException caso x ou y nÃ£o atenda as condiÃ§Ãµes;
      *
      */
     public static int divideSubtracoes(int x,int y){
         if (x < 0){
-            throw new IllegalArgumentException("x inválido");
+            throw new IllegalArgumentException("x invÃ¡lido");
         }
+        
         if (y <= 0){
-            throw new IllegalArgumentException("y inválido");
+            throw new IllegalArgumentException("y invÃ¡lido");
         }
 
         int d = 0;
