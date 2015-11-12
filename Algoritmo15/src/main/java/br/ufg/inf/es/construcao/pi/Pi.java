@@ -8,7 +8,7 @@ public class Pi {
      *
      * @param n grau de precisão do pi;
      * @return p valor do pi ;
-     * IllegalArgumentException caso n seja menor que 1;
+     * @throws IllegalArgumentException  caso n seja menor que 1;
      *varíavel de controle no loop : i;
      */
     public static double pi(int n){
