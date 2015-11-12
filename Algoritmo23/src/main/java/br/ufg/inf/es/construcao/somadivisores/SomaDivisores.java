@@ -1,20 +1,20 @@
 package br.ufg.inf.es.construcao.somadivisores;
 
 /**
- * implementação do algoritmo que efetua a soma dos divisores de um número;
+ * implementaÃ§Ã£o do algoritmo que efetua a soma dos divisores de um nÃºmero;
  */
 public class SomaDivisores {
     /**
      *
      * @param n valor de entrada que deve ser positvivo;
-     * @return s, que é a soma dos divisores de n(no caso o próprio n não é
+     * @return s, que Ã© a soma dos divisores de n(no caso o prÃ³prio n nÃ£o Ã©
      * considera na soma dos divisores;
-     * IllegalArgumentException caso n seja igual ou menor que 0;
+     * @throws IllegalArgumentException caso n seja igual ou menor que 0;
      *
      */
     public static int somaDivisores(int n){
         if (n <= 0){
-            throw new IllegalArgumentException("n inválido");
+            throw new IllegalArgumentException("n invÃ¡lido");
         }
 
         int d = 2;
