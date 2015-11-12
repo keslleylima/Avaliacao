@@ -8,13 +8,13 @@ public class NumHarmonico {
      *
      * @param n número dos elementos da sequência númerica ;
      * @return s valor da soma da sequênçia harmônica;
-     * IllegalArgumentException caso n seja menor que 1;
+     * @throws IllegalArgumentException caso n seja menor que 1;
      * varíavel de controle do loop : i;
      *
      */
     public static double numHarmonico(int n) {
         if (n < 1){
-            throw new IllegalArgumentException("n invalido");
+            throw new IllegalArgumentException("n inválido");
         }
 
         double i = 2;
