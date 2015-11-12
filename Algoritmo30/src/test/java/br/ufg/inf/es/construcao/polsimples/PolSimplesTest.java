@@ -15,11 +15,13 @@ public class PolSimplesTest {
         int []vetor  = {1,2,3,4,5};
         PolSimples.polSimples(0,0,vetor);
     }
+    
     @Test(expected = IllegalArgumentException.class)
     public void ParametroElementoVetorInvalido(){
         int []vetor  = {1,2,3,4,5,0};
         PolSimples.polSimples(2,6,vetor);
     }
+    
     @Test
     public void testPolSimples() throws Exception {
         int []vetor = {1,2,3,4,5};
