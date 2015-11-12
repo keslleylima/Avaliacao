@@ -9,7 +9,7 @@ public class Mdc {
      * @param a número qualquer, desde que seja maior ou igual a b
      * @param b número que seja maior que 0;
      * @return a que é o mdc entre a e b;
-     * IllegalArgumentException caso dados de entrada não atenda a condicao;
+     * @throws IllegalArgumentException  caso dados de entrada não atenda a condicao;
      *
      */
     public static  int mdc(int a,int b) {
