@@ -9,7 +9,7 @@ public class Somatorio {
      * @param n quantidade de numeros;
      * @return s soma dos n numeros reais;
      * variavel de controle do loop:i;
-     * IllegalArgumentException caso n seja menor que 1;
+     *@throws IllegalArgumentException  caso n seja menor que 1;
      */
     public static double somatorio(int n){
        if (n < 1){
