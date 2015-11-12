@@ -1,34 +1,34 @@
 package br.ufg.inf.es.construcao.polsimples;
 
 /**
- * algoritmo que implementa o cálculo do polinomio simples;
+ * algoritmo que implementa o cÃ¡lculo do polinomio simples;
  */
 public class PolSimples {
     /**
      *
-     * @param x número de elmentos inteiros;
+     * @param x nÃºmero de elmentos inteiros;
      * @param g inidce do vetor;
-     * @param a vetor que armazena os x números;
+     * @param a vetor que armazena os x nÃºmeros;
      * @return p valor do polinomio;
-     * IllegalArgumentException caso não atenda as condicoes:
+     * @throws IllegalArgumentException caso nÃ£o atenda as condicoes:
      * tamanho do vetor >= indice do vetor + 1;
      * todos elementos do vetor devem ser diferente de 0;
      * o indice do vetor(g) deve ser igual ou maior que 1;
-     * varíavel de controle do loop: i;
-     * Uso da class potência para obter a potencia entre x ,g e x,i;
+     * varÃ­avel de controle do loop: i;
+     * Uso da class potÃªncia para obter a potencia entre x ,g e x,i;
      *
      */
     public static int polSimples(int x,int g,int[]a){
     if (a.length < g+1){
-        throw new IllegalArgumentException("tamanho do vetor inválido");
+        throw new IllegalArgumentException("tamanho do vetor invÃ¡lido");
     }
 
     if (a[g] == 0){
-        throw new IllegalArgumentException("vetor inválido");
+        throw new IllegalArgumentException("vetor invÃ¡lido");
     }
 
     if (g < 1){
-        throw new IllegalArgumentException("g inválido");
+        throw new IllegalArgumentException("g invÃ¡lido");
     }
 
     int t = Potencia.potencia(x,g);
