@@ -1,16 +1,16 @@
 package br.ufg.inf.es.construcao.razaoaurea;
 
 /**
- * implementacao do algoritmo que realiza o c·lculo da raz„o ·urea;
+ * implementacao do algoritmo que realiza o c√°lculo da raz√£o √°urea;
  */
 public class RazaoAurea {
     /**
      *
      * @param t1 primeiro valor entrada corresponde ao termo corrente;
      * @param t2 segundo valor entrada corresponde ao termo anterior;
-     * @param fator fator para a determinada raz„o ·urea;
+     * @param fator fator para a determinada raz√£o √°urea;
      * @return tc+ta/tc-ta,ou seja, tc/ta;
-     * IllegalArgumentException caso algum dos parametros nao atenda as condiÁıes;
+     * @throws IllegalArgumentException caso algum dos parametros nao atenda as condi√ß√µes;
      * variavel de controle do loop: i;
      */
     public static double razaoAurea(int t1,int t2,int fator){
