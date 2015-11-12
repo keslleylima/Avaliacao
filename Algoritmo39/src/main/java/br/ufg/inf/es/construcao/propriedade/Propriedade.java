@@ -1,11 +1,14 @@
 package br.ufg.inf.es.construcao.propriedade;
 
 /**
- * Algoritmo que verifica quantos números atende a propriedade Soma
- * dos fatorias dos dígitos de n é igual a ele;
+ * Algoritmo que verifica quantos nÃºmeros atende a propriedade Soma
+ * dos fatorias dos dÃ­gitos de n Ã© igual a ele;
  */
 public class Propriedade {
-
+    /**
+     * verifica a propriedade;
+     * @return quantidade de nÃºmeros que atendem a propriedade;
+     */
     public static int propriedade(){
         int t = 0;
         int n = 0;
