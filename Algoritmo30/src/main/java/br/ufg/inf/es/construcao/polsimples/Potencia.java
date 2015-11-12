@@ -1,24 +1,24 @@
 package br.ufg.inf.es.construcao.polsimples;
 
 /**
- * algoritmo que implementa a operação de potência entre dois números;
+ * algoritmo que implementa a operaÃ§Ã£o de potÃªncia entre dois nÃºmeros;
  */
 public class Potencia {
     /**
      *
-     * @param x  número qualquer positivo;
-     * @param y  número maior ou igual a zero;
-     * @return p resultado da potência entre x e y;
-     * throw new IllegalArgumentException caso x ou y nao atenda a condição;
-     * variável de controle do loop : i;
+     * @param x  nÃºmero qualquer positivo;
+     * @param y  nÃºmero maior ou igual a zero;
+     * @return p resultado da potÃªncia entre x e y;
+     * @throws IllegalArgumentException caso x ou y nao atenda a condiÃ§Ã£o;
+     * variÃ¡vel de controle do loop : i;
      */
     public static int potencia (int x, int y) {
         if ( x <= 0 ) {
-            throw new IllegalArgumentException("x inválido");
+            throw new IllegalArgumentException("x invÃ¡lido");
         }
 
         if (y < 0) {
-            throw new IllegalArgumentException("y inválido");
+            throw new IllegalArgumentException("y invÃ¡lido");
         }
 
         int i = 1;
