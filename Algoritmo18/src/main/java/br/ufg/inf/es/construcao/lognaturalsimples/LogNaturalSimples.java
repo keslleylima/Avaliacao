@@ -1,17 +1,22 @@
 package br.ufg.inf.es.construcao.lognaturalsimples;
 
 /**
- * algoritmo que implementa o c·lculo do log-natural-siimples em n,k;
+ * algoritmo que implementa o c√°lculo do log-natural-siimples em n,k;
  */
 public class LogNaturalSimples {
-
+   /**
+     * verifica log natural;
+     * @param n inteiro que ser√£o verificado;
+     * @param k grau de precisao do log;
+     * @return valor do logaritmo;
+     */
     public static double logNaturalSimples(int n,int k) {
      if (n < 1){
-         throw new IllegalArgumentException("n inv·lido");
+         throw new IllegalArgumentException("n inv√°lido");
      }
 
      if (k < 2){
-         throw new IllegalArgumentException("k inv·lido");
+         throw new IllegalArgumentException("k inv√°lido");
      }
 
      int i = 2;
