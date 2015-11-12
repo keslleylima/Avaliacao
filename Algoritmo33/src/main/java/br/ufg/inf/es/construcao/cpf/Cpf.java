@@ -1,28 +1,28 @@
 package br.ufg.inf.es.construcao.cpf;
 
-/**algoritmo que implementa a verificação da validade da sequência de 11 digitos
+/**algoritmo que implementa a verificaÃ§Ã£o da validade da sequÃªncia de 11 digitos
  * do cpf;
  */
 public class Cpf {
     /**
      *
      * @param d vetor
-     * @return valor booleano retorna true = cpf váldio false= cpf inválido;
-     * IllegalArgumentException caso :
+     * @return valor booleano retorna true = cpf vÃ¡ldio false= cpf invÃ¡lido;
+     * @throws IllegalArgumentException caso :
      * tamanho do vetor seja menor que 12( d.length deve ser >= 12);
-     * d[i] < 0 || d[i] > 9),ou seja, caso alguma posição do vetor tenha
-     * um número maior que 9 ou menor que 0;
-     * digitos válidos d[1] até d[11];
+     * d[i] < 0 || d[i] > 9),ou seja, caso alguma posiÃ§Ã£o do vetor tenha
+     * um nÃºmero maior que 9 ou menor que 0;
+     * digitos vÃ¡lidos d[1] atÃ© d[11];
      *
      */
     public static boolean cpf(int [] d){
         if (d.length < 12){
-            throw new IllegalArgumentException("Tamanho do vetor Inválido");
+            throw new IllegalArgumentException("Tamanho do vetor InvÃ¡lido");
         }
 
         for(int i = 1;i <12;i++) {
             if (d[i] < 0 || d[i] > 9) {
-                throw new IllegalArgumentException("Número Inválido");
+                throw new IllegalArgumentException("NÃºmero InvÃ¡lido");
             }
         }
 
