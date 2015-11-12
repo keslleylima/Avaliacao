@@ -29,7 +29,7 @@ public class SomaArrayTest {
     @Test
     public void testSomaArray4Primeiro() throws Exception {
         int A [] = {1,1,1,2,5,6,7};
-        assertEquals(6,SomaArray.somaArray(A,4));
+        assertEquals(9,SomaArray.somaArray(A,4));
     }
 
 }
