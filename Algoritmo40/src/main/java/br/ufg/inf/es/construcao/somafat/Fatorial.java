@@ -8,7 +8,7 @@ public class Fatorial {
      *
      * @param n numero que deseja calcular seu fatorial;
      * @return f valor do fatorial de um numero(n);
-     * IllegalArgumentException caso n seja menor que 1;
+     * @throws IllegalArgumentException caso n seja menor que 1;
      * variavel de controle do loop : i;
      */
     public static int fatorial(int n){
