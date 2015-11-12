@@ -1,9 +1,7 @@
 package br.ufg.inf.es.construcao.divide;
 
-import java.net.SocketPermission;
-
 /**
- * Algoritmo que implementa
+ * Implementa√ß√£o do algoritmo divide;
  */
 public class Divide {
     /**
@@ -12,19 +10,19 @@ public class Divide {
      * @param b segundo valor de entrada;
      * @param k varivel de controle do loop;
      * @return 0;
-     * IllegalArgumentException caso a ou b n„o atenda as condiÁıes;
-     * System.out.print impress„o
+     * @throws IllegalArgumentException caso a ou b n√£o atenda as condi√ß√µes;
+     * System.out.print impress√£o
      * DivideSomas.divideSoma e Produto.produto classes chamadas para
      * obter valor de d e r respectivamente;
      *
      */
     public static int divide(int a, int b,int k){
         if (a <= b){
-            throw new IllegalArgumentException("a inv·lido");
+            throw new IllegalArgumentException("a inv√°lido");
         }
 
         if (b <= 0){
-            throw new IllegalArgumentException("b inv·lido");
+            throw new IllegalArgumentException("b inv√°lido");
         }
 
         int d = DivideSomas.divideSoma(a,b);
