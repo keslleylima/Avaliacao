@@ -6,16 +6,16 @@ package br.ufg.inf.es.construcao.divide;
 public class Produto {
     /**
      *
-     * @param a número qualquer que seja maior que 0;
-     * @param b número igual ou maior do que 0;
+     * @param a nÃºmero qualquer que seja maior que 0;
+     * @param b nÃºmero igual ou maior do que 0;
      * @return s resultado do produto entre a e b;
-     * throw new IllegalArgumentException caso a ou b
-     * nao satisfazerem a condição;
+     * @throws IllegalArgumentException caso a ou b
+     * nao satisfazerem a condiÃ§Ã£o;
      * variavel i funciona com contador dentro do loop;
      */
     public static int produto(int a, int b) {
         if (a < 0 ) {
-            throw new IllegalArgumentException("a não pode ser menor que 0");
+            throw new IllegalArgumentException("a nÃ£o pode ser menor que 0");
         }
 
         if (b < 0) {
