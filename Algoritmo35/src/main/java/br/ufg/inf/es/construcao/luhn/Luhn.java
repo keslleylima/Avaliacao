@@ -1,30 +1,36 @@
 package br.ufg.inf.es.construcao.luhn;
 
 /**
- * algoritmo Luhn ou fÛrmula Luhn, È uma simples soma de verificaÁ„o fÛrmula
- * utilizada para validar uma variedade de n˙meros de identificaÁ„o, como
- * cart„o de crÈdito e outros;
+ * algoritmo Luhn ou f√≥rmula Luhn, √© uma simples soma de verifica√ß√£o f√≥rmula
+ * utilizada para validar uma variedade de n√∫meros de identifica√ß√£o, como
+ * cart√£o de cr√©dito e outros;
  */
 public class Luhn {
-
+    /**
+     * @param int n[] vetor que sera verificado;
+     * i variavel que acumula d√≠gitos impares;
+     * p variavel que acumula d√≠gitos pares;
+     * return 10- Mod.mod(i + p,10);
+     * @throws IllegalArgumentException caso k seja menor que 2;
+     */
     public static int luhn(int n[]){
         int k = n.length;
 
         if (k < 2){
-            throw new IllegalArgumentException("k inv·lido");
+            throw new IllegalArgumentException("k inv√°lido");
         }
 
         int i = 0; // acumula parcelas impares;
         int p = 0; // acumula parcelas pares;
-        int l = k - 1; // remove dÌgito verificador do cÙmputo;
+        int l = k - 1; // remove d√≠gito verificador do c√¥mputo;
         boolean a = false;
 
         while (l > 0){
             if(a) {
-                p = p + n[l]; //acumula digÌtos pares;
+                p = p + n[l]; //acumula dig√≠tos pares;
             }else {
-                int t = n[l] * 2 ; // dobro do elemento de ordem Ìmpar;
-                i = i + (t / 10) + Mod.mod(t,10); // acumula dÌgitos de t;
+                int t = n[l] * 2 ; // dobro do elemento de ordem √≠mpar;
+                i = i + (t / 10) + Mod.mod(t,10); // acumula d√≠gitos de t;
             }
 
             l = l - 1;
