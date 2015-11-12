@@ -1,19 +1,19 @@
 package br.ufg.inf.es.construcao.potenciasoma;
 
 /**
- * Implementação de algoritmo que calcula a potência de um número x em um
- * expoente y, utilizando apenas multiplicações simples;
+ * ImplementaÃ§Ã£o de algoritmo que calcula a potÃªncia de um nÃºmero x em um
+ * expoente y, utilizando apenas multiplicaÃ§Ãµes simples;
  */
 public class PotenciaSoma {
     /**
      *
-     * @param x número maior que 0;
-     * @param y número maior ou igual a 1;
-     * @return p resultado da potência entre x e y;
-     * IllegalArgumentException  caso x ou y nao atenda as condiçôes do loop;
-     * p = Produto.produto(p,x); chama a classe que efetua o produto que é
+     * @param x nÃºmero maior que 0;
+     * @param y nÃºmero maior ou igual a 1;
+     * @return p resultado da potÃªncia entre x e y;
+     * @throws IllegalArgumentException  caso x ou y nao atenda as condiÃ§Ã´es do loop;
+     * p = Produto.produto(p,x); chama a classe que efetua o produto que Ã©
      * recebido por p;
-     * variável de controle no loop : i;
+     * variÃ¡vel de controle no loop : i;
      */
     public static int potenciaSoma(int x,int y) {
         if (x <= 0) {
