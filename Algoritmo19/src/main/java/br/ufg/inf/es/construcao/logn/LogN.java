@@ -9,13 +9,13 @@ public class LogN {
      * @param n primeiro valor de entrada que deve ser maior ou igaul a 1;
      * @param k segundo valor de entrada que deve ser maior ou igual a 2;
      * @return e valor do do log natural entre n e k;
-     * IllegalArgumentException quando os valores de entrada nao atende
-     * as condições do loop;
+     * @throws IllegalArgumentException quando os valores de entrada nao atende
+     * as condiÃ§Ãµes do loop;
      * variavel de controle do loop : i;
      */
     public static double logN(int n, int k){
         if (n < 1){
-            throw new IllegalArgumentException("n inválido");
+            throw new IllegalArgumentException("n invÃ¡lido");
         }
 
         if (k < 2){
