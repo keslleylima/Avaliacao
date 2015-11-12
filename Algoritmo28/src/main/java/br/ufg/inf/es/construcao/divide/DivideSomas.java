@@ -1,8 +1,8 @@
 package br.ufg.inf.es.construcao.divide;
 
 /**
- * implementação do algoritmo que divide x por y utilizando apenas soma
- * o resultado e o último divisor inteiro EX: 5/2 = 2 e não 2.5;
+ * implementaÃ§Ã£o do algoritmo que divide x por y utilizando apenas soma
+ * o resultado e o Ãºltimo divisor inteiro EX: 5/2 = 2 e nÃ£o 2.5;
  */
 public class DivideSomas {
     /**
@@ -10,15 +10,16 @@ public class DivideSomas {
      * @param x primeiro valor de entrada,sendo maior ou igaula a 0;
      * @param y segundo valor de entrada,sendo maior do que zero;
      * @return d valor da divisao de x por y;
-     * IllegalArgumentException caso x ou y não atenda as condições;
+     * @throws IllegalArgumentException caso x ou y nÃ£o atenda as condiÃ§Ãµes;
      *
      */
     public static int divideSoma(int x,int y){
         if (x < 0){
-            throw new IllegalArgumentException("x inválido");
+            throw new IllegalArgumentException("x invÃ¡lido");
         }
+        
         if (y <= 0){
-            throw new IllegalArgumentException("y inválido");
+            throw new IllegalArgumentException("y invÃ¡lido");
         }
 
         int d = 0;
