@@ -60,6 +60,12 @@
 		             <module>Algoritmo48</module>
 		</modules>
 
+    <scm>
+        <connection>scm:git:git@github.com:keslleylima/Avaliacao.git</connection>
+        <developerConnection>scm:git:git@github.com:keslleylima/Avaliacao.git</developerConnection>
+        <url>https://github.com/keslleylima/Avaliacao</url>
+    </scm>
+	
     <build>
         <pluginManagement>
             <plugins>
